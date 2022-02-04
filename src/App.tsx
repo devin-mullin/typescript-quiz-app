@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import QuestionCard from './components/QuestionCard'
 import { fetchQuizQuestions, Difficulty, QuestionState } from './API'
+import { GlobalStyle, Wrapper } from './App.styles'
 
 export type AnswerObject = {
   question: string;
@@ -68,7 +69,9 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
+    <GlobalStyle />
+    <Wrapper>
         <h1>DEVY QUIZ</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
                   <button className="start" onClick={startTrivia}>
@@ -93,7 +96,8 @@ function App() {
         Next Question
       </button>
         ) : null}
-  </div>
+  </Wrapper>
+  </>
   );
 }
 
