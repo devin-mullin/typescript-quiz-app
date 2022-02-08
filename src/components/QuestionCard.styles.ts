@@ -34,14 +34,14 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
         margin: 5px 0;
         background: ${({ correct, userClicked })=> 
         correct
-        ? 'linear-gradient(90deg, #56ffa4, #59b86)'
+        ? 'linear-gradient(90deg, #56FFA4, #59BC86)'
         : !correct && userClicked
-        ? 'linear-gradient(90deg, #ff5656, #c16868)'
-        : 'linear-gradient(90deg, #56ccff, #6eafb4)'
-    }
-        border: 3px solid;
-        box-shadow: 1px 2px 0px rgba(0,0,0,0.1)
-        color: #fff;
-        text-shadow: 0px 1px 0px rgba(0,0,0,0.25)
+        ? 'linear-gradient(90deg, #FF5656, #C16868)'
+        : 'linear-gradient(90deg, #56ccff, #6eafb4)'};
+    border: 3px solid #ffffff;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
     }
 `
